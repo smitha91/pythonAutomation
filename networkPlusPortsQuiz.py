@@ -28,10 +28,10 @@ for i in range(5):
     answer = input(f"Q{i+1}: What protocol uses port {q['port']}? ").strip()
 
     if answer.lower() == q["protocol"].lower():
-        print("✅ Correct!")
+        print("Correct!")
         score += 1
     else:
-        print(f"❌ Incorrect. The correct answer is {q['protocol']} — {q['description']}")
+        print(f"Incorrect. The correct answer is {q['protocol']} — {q['description']}")
 
 print(f"\nYour score: {score}/5")
 
@@ -67,10 +67,10 @@ print(f"\nYour score: {score}/5")
 # → Checks if the user's answer matches the correct protocol (case-insensitive)
 
 # If correct:
-# → Print "✅ Correct!" and add 1 to the score
+# → Print "Correct!" and add 1 to the score
 
 # If incorrect:
-# → Print "❌ Incorrect" and show the correct answer and explanation
+# → Print "Incorrect" and show the correct answer and explanation
 
 # After the loop ends:
 # → Print the final score out of 5
